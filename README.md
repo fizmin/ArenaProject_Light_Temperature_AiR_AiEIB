@@ -29,4 +29,4 @@ Każde urządzenie zawiera własną tablicę `routing_table`, określającą doc
 ## Bezpieczeństwo komunikacji  
 
 W projekcie zastosowano szyfrowanie komunikacji w oparciu o algorytm **AES**. Klucz szyfrujący zapisany jest w pliku `secrets.h`.  
-⚠️ Należy pamiętać o jego zmianie przed wdrożeniem systemu – domyślny klucz umieszczony w repozytorium nie powinien być wykorzystywany w środowisku produkcyjnym.  
+⚠️ Należy pamiętać o jego zmianie przed wdrożeniem systemu – domyślny klucz umieszczony w repozytorium nie powinien być wykorzystywany w projekcie  
