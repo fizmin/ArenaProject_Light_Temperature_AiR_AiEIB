@@ -6,23 +6,23 @@ Repozytorium zawiera projekt studencki realizowany na Politechnice Śląskiej w 
 
 W repozytorium znajdują się:  
 - kod źródłowy projektu,  
-- folder `main_files_for_all_devices` zawierający pliki `main` dla pięciu urządzeń wchodzących w skład systemu.  
+- folder `main_files_for_all_devices` zawierający pliki `main` i pliki 'user_params' dla pięciu urządzeń wchodzących w skład systemu.  
 
 Aby wgrać kod na wybrane urządzenie, należy:  
 1. Pobrać repozytorium,  
-2. Podmienić plik `main` na wersję odpowiadającą konkretnemu urządzeniu,  
+2. Podmienić plik `main` i plik 'user_params' na wersję odpowiadającą konkretnemu urządzeniu,  
 3. Usunąć folder `main_files_for_all_devices`,  
-4. Wgrać przygotowany plik `main` na mikrokontroler ESP32.  
+4. Wgrać przygotowany projekt na mikrokontroler ESP32.  
 
 ## Urządzenia w projekcie  
 
 System składa się z pięciu urządzeń, z których każde posiada przypisany identyfikator w sieci:  
 
-- **0** – router,  
-- **1** – pilot,  
-- **2** – kontroler zapasowy,  
-- **3** – czujnik temperatury,  
-- **4** – odbiornik pomiarów temperatury.  
+- **0** – router [Router],  
+- **1** – pilot [RemoteControler],  
+- **2** – kontroler zapasowy [BackupController],  
+- **3** – czujnik temperatury [TempTransmitter],  
+- **4** – odbiornik pomiarów temperatury [TempReciever].  
 
 Każde urządzenie zawiera własną tablicę `routing_table`, określającą docelowe węzły komunikacji w sieci LoRa.  
 
