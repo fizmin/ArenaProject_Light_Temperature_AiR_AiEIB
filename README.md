@@ -6,7 +6,7 @@ Repozytorium zawiera projekt studencki realizowany na Politechnice Śląskiej w 
 
 W repozytorium znajdują się:  
 - kod źródłowy projektu,  
-- folder `main_files_for_all_devices` zawierający pliki `main` i pliki 'user_params' dla pięciu urządzeń wchodzących w skład systemu.  
+- folder `main_files_for_all_devices` zawierający pliki `main` i pliki `user_params` dla pięciu urządzeń wchodzących w skład systemu.  
 
 Aby wgrać kod na wybrane urządzenie, należy:  
 1. Pobrać repozytorium,  
