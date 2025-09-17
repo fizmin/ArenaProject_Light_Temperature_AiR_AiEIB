@@ -10,7 +10,7 @@ W repozytorium znajdują się:
 
 Aby wgrać kod na wybrane urządzenie, należy:  
 1. Pobrać repozytorium,  
-2. Podmienić plik `main` i plik 'user_params' na wersję odpowiadającą konkretnemu urządzeniu,  
+2. Podmienić plik `main` i plik `user_params` na wersję odpowiadającą konkretnemu urządzeniu,  
 3. Usunąć folder `main_files_for_all_devices`,  
 4. Wgrać przygotowany projekt na mikrokontroler ESP32.  
 
