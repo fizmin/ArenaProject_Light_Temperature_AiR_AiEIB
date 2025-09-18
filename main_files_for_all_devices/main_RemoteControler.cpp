@@ -68,11 +68,11 @@ void setup() {
       //Serial.println(Lora::send_with_ack(RELAY_STATION_ADRESS,msg,2));
         if(Lora::send_with_ack(RELAY_STATION_ADRESS,msg,2) > 0)
       {
-        Oled::drawBigText(4,15,F("Relay 0"));
-        Oled::drawBigText(4,40,F("ON"));
+        Oled::drawBigText(4,15,F("Re0 ON"));
+        Oled::drawBigText(4,40,F("Success"));
       }else
       {
-        Oled::drawBigText(4,15,F("Relay 0"));
+        Oled::drawBigText(4,15,F("Re0 ON"));
         Oled::drawBigText(4,40,F("Failed"));
       }
       }
@@ -83,11 +83,11 @@ void setup() {
      //Serial.println(Lora::send_with_ack(RELAY_STATION_ADRESS,msg,2));
         if(Lora::send_with_ack(RELAY_STATION_ADRESS,msg,2) > 0)
       {
-        Oled::drawBigText(4,15,F("Relay 0"));
-        Oled::drawBigText(4,40,F("OFF"));
+        Oled::drawBigText(4,15,F("Re0 OFF"));
+        Oled::drawBigText(4,40,F("Success"));
       }else
       {
-        Oled::drawBigText(4,15,F("Relay 0"));
+        Oled::drawBigText(4,15,F("Re0 OFF"));
         Oled::drawBigText(4,40,F("Failed"));
       }
       }
@@ -99,11 +99,11 @@ void setup() {
       //Serial.println(Lora::send_with_ack(RELAY_STATION_ADRESS,msg,2));
         if(Lora::send_with_ack(RELAY_STATION_ADRESS,msg,2) > 0)
       {
-        Oled::drawBigText(4,15,F("Relay 1"));
-        Oled::drawBigText(4,40,F("ON"));
+        Oled::drawBigText(4,15,F("Re1 ON"));
+        Oled::drawBigText(4,40,F("Success"));
       }else
       {
-        Oled::drawBigText(4,15,F("Relay 1"));
+        Oled::drawBigText(4,15,F("Re1 ON"));
         Oled::drawBigText(4,40,F("Failed"));
       }
       }
@@ -114,11 +114,11 @@ void setup() {
       //Serial.println(Lora::send_with_ack(RELAY_STATION_ADRESS,msg,2));
         if(Lora::send_with_ack(RELAY_STATION_ADRESS,msg,2) > 0)
       {
-        Oled::drawBigText(4,15,F("Relay 1"));
-        Oled::drawBigText(4,40,F("OFF"));
+        Oled::drawBigText(4,15,F("Re1 OFF"));
+        Oled::drawBigText(4,40,F("Success"));
       }else
       {
-        Oled::drawBigText(4,15,F("Relay 1"));
+        Oled::drawBigText(4,15,F("Re1 OFF"));
         Oled::drawBigText(4,40,F("Failed"));
       }
       }
