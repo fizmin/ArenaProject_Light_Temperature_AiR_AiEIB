@@ -30,3 +30,7 @@ Każde urządzenie zawiera własną tablicę `routing_table`, określającą doc
 
 W projekcie zastosowano szyfrowanie komunikacji w oparciu o algorytm **AES**. Klucz szyfrujący zapisany jest w pliku `secrets.h`.  
 ⚠️ Należy pamiętać o jego zmianie przed wdrożeniem systemu – domyślny klucz umieszczony w repozytorium nie powinien być wykorzystywany w projekcie  
+
+Projekt opracowany na podstawie:
+https://github.com/Szymon300101/L-CORE/tree/simple-example
+https://github.com/DavyLandman/AESLib/tree/master
