@@ -59,7 +59,7 @@ void loop() {   //Funkcja loop
     Serial.print("DEST_ADDR: "); Serial.println(buf[FRAME_POS_DEST_ADDR]);
     Serial.print("NEXT_ADDR: "); Serial.println(buf[FRAME_POS_NEXT_ADDR]);
     Serial.print("SEND_ADDR: "); Serial.println(buf[FRAME_POS_SEND_ADDR]);
-    Serial.print("📡 Odebrano pakiet od "); Serial.println(sender);
+    Serial.print("Odebrano pakiet od "); Serial.println(sender);
 
     // Deszyfrowanie danych (ciąg znaków ASCII do 16 bajtów)
     char decrypted[17];
@@ -71,6 +71,9 @@ void loop() {   //Funkcja loop
     batteryPercent = (int)(((lastVolt - 2.82) / (3.93 - 2.82)) * 100.0);  // Obliczenie poziomu baterii w procentach
 
     Serial.print("Dane: "); Serial.println(decrypted); // Debug: wyświetlenie odebranych danych
+  }
+  else if (Lora::try_receive(&sender, buf, &size) == Lora::GOT_NOTHING) {
+    // tu nic nie rób — nie wypisuj "DEST_ADDR", żeby nie drukować śmieci
   }
 
   // Obsługa przycisku – włączenie wyświetlacza po naciśnięciu
