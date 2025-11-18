@@ -15,7 +15,7 @@
 // 4 - odbiornik pomiarów temperatury
 
 //ODKOMENTOWAĆ POTRZEBNE
-
+/* 
 // Jeśli komunkacja nadajnik > przez router > odbiornik
 int routing_table[NET_SIZE] = {
     0, // do rutera: pośrednio przez router
@@ -24,8 +24,8 @@ int routing_table[NET_SIZE] = {
     3, // do siebie: nie wysyłaj (albo zignoruj)
     0  // do odbiornika: pośrednio przez router
 };
+*/
 
-/* 
 // Jeśli komunkacja bezpośrednia nadajnik > odbiornik
 int routing_table[NET_SIZE] = {
     0, // do rutera: pośrednio przez router
@@ -34,5 +34,5 @@ int routing_table[NET_SIZE] = {
     3, // do siebie: nie wysyłaj (albo zignoruj)
     4  // do odbiornika: bezpośrednio
 };
-*/
+
 #endif
